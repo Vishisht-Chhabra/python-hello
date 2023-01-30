@@ -8,6 +8,7 @@ def hello_world(request):
     if name == None or len(name) == 0:
         name = "World"
     message = "Good Morning, " + name + "!\n"
+    print(message)
     return Response(message)
 
 if __name__ == '__main__':
