@@ -25,7 +25,7 @@ def hello_world(request):
         name = "World"
     message = "Good Morning, " + name + "!\n"
     #print(message)
-    logger.info(message)
+    logger.debug(message)
     return Response(message)
 
 if __name__ == '__main__':
