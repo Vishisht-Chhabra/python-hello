@@ -27,6 +27,7 @@ phases:
     on-failure: CONTINUE
     commands:
       - echo "build"
+      - echo "Added a new Test_Command"
   post_build:
     on-failure: CONTINUE
     commands:
