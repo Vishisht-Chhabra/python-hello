@@ -21,7 +21,7 @@ phases:
     on-failure: CONTINUE
     commands:
       - echo "pre_build"
-
+      - echo "Test_Command"
     # steps:
   build:
     on-failure: CONTINUE
