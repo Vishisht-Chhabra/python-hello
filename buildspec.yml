@@ -7,7 +7,7 @@ phases:
   install:
     on-failure: CONTINUE
     runtime-versions:
-      nodejs: 18
+      nodejs: 16
     commands:
       - echo "Webhook Payload"
       - echo "${CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID}"
