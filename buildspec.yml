@@ -5,7 +5,9 @@ env:
         
 phases:
   install:
-    on-failure: CONTINUE
+    on-failure: CONTINUE    
+    runtime-versions:
+      nodejs: 18
     commands:
       - echo "Webhook Payload"
       - echo "${CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID}"
