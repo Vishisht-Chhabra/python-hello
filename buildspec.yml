@@ -10,6 +10,15 @@ phases:
       nodejs: 18
     commands:
       - codebuild-breakpoint
+      - printenv
+      - echo " "
+      - echo " "
+      - printenv | grep "CODEBUILD"
+      - echo " "
+      - echo " "
+      - echo " "
+      - printenv | grep "CODEBUILD_WEBHOOK"
+      - echo " "
       - echo "Webhook Payload"
       - echo "${CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID}"
       - echo "${CODEBUILD_WEBHOOK_BASE_REF}"
