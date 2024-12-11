@@ -9,6 +9,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - codebuild-breakpoint
       - echo "Webhook Payload"
       - echo "${CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID}"
       - echo "${CODEBUILD_WEBHOOK_BASE_REF}"
