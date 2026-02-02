@@ -30,6 +30,7 @@ phases:
       # comment to test 2
       # comment to test 3
       # comment to test 4
+      # Comment to test 5 - Only Buildspec
     # steps:
   pre_build:
     on-failure: CONTINUE
