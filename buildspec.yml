@@ -1,0 +1,45 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+        
+phases:
+  install:
+    on-failure: CONTINUE    
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - codebuild-breakpoint
+      - printenv
+      - echo " "
+      - echo " "
+      - printenv | grep "CODEBUILD"
+      - echo " "
+      - echo " "
+      - echo " "
+      - printenv | grep "CODEBUILD_WEBHOOK"
+      - echo " "
+      - echo "Webhook Payload"
+      - echo "${CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID}"
+      - echo "${CODEBUILD_WEBHOOK_BASE_REF}"
+      - echo "${CODEBUILD_WEBHOOK_EVENT}"
+      - echo "${CODEBUILD_WEBHOOK_PREV_COMMIT}"
+      - echo "${CODEBUILD_WEBHOOK_HEAD_REF}"
+      - echo "${CODEBUILD_WEBHOOK_TRIGGER}"
+      # Comment to tst 1
+    # steps:
+  pre_build:
+    on-failure: CONTINUE
+    commands:
+      - echo "pre_build"
+      - echo "Test_Command"
+    # steps:
+  build:
+    on-failure: CONTINUE
+    commands:
+      - echo "build"
+      - echo "Added a new Test_Command"
+  post_build:
+    on-failure: CONTINUE
+    commands:
+      - echo "post_build"
