@@ -29,6 +29,7 @@ phases:
       # Comment to tst 1
       # comment to test 2
       # comment to test 3
+      # comment to test 4
     # steps:
   pre_build:
     on-failure: CONTINUE
