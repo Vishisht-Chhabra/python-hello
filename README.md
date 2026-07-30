@@ -10,3 +10,5 @@ Performing Commit for CodeBuild Test
 
 Readme Test while also updating
 Readme test 2 while updating buildspec
+
+Performing a Test 3.
