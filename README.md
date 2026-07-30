@@ -14,3 +14,5 @@ Readme test 2 while updating buildspec
 Performing a Test 3.
 
 Perform Test 4 - GitDiff.
+
+Running Manually in CodeBUild.
