@@ -16,3 +16,5 @@ Performing a Test 3.
 Perform Test 4 - GitDiff.
 
 Running Manually in CodeBUild.
+
+Testing rclone
